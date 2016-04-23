@@ -1,0 +1,27 @@
+.bottomList{
+    border-top: 7px solid;
+    border-top-color: $FlatGrayColor;
+    .bottomList-grid{
+        display: flex;
+        flex-flow: row;
+        height: 100%;
+        hr{
+            height: 100%;
+            margin: 0;
+        }
+        .column{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 50%;
+            i.icon{
+                margin: 0;
+            }
+            &:hover{
+                background-color: $FlatMidNightBlue;
+                color: $whiteColor;
+            }
+        }
+    }
+}

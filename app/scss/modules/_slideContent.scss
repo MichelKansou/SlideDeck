@@ -1,0 +1,95 @@
+.ui.grid{
+    &.slideContent{
+        margin: 0;
+        border-radius: 0;
+        background-color: $whiteColor;
+        border-bottom: 1px solid;
+        border-color: $FlatGrayColor;
+        .column{
+            &.data{
+                cursor: pointer;
+                flex: 1;
+                flex-flow: column;
+            }
+            &.options{
+                text-align: right;
+                display: flex;
+                visibility: hidden;
+                flex: 0.1;
+                padding: 0;
+                i{
+                    &.save{
+                        visibility: hidden;
+                    }
+                    margin: 0;
+                    .icon{
+                        margin: 0;
+                        background-color: $FlatMidNightBlue;
+                    }
+
+                }
+                .ui.popup{
+                    padding: 5px 10px;
+                }
+            }
+            &.edit{
+                display: none;
+                .ui.input{
+                    &.slideConfiguration{
+                        padding-top: 10px;
+                        display: flex;
+                        flex-flow: column;
+                        >span{
+                            display: flex;
+                            .editPathInput{
+                                display: inline-block;
+                                margin-left: 15px;
+                            }
+                        }
+                        input{
+                            padding: 3px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                &.show{
+                    display: flex;
+                    flex-flow: column;
+                }
+
+            }
+        }
+        &.active{
+            &:hover{
+                background-color: $FlatBlackColor;
+            }
+            color: $whiteColor;
+            background-color: $FlatBlackColor;
+            .column{
+                &.options{
+                    visibility: hidden;
+                }
+                &.data{
+                    span.slideConfiguration{
+                        color: $whiteColor;
+                    }
+                }
+                &.edit{
+                    .ui.input{
+                        &.slideConfiguration{
+                            color: $whiteColor;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            background-color: $whiteColor;
+            .column{
+                &.options{
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}

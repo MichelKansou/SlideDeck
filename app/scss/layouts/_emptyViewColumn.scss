@@ -1,0 +1,22 @@
+.emptyView {
+    background-color: $FlatSmokeWhiteColor;
+    flex: 1;
+    height: 100%;
+    >.container{
+        flex-flow: column;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        font-size: 17px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: $FlatBlackColor2;
+        p{
+            margin-top: 20px;
+            i{
+                vertical-align: sub;
+            }
+        }
+    }
+}

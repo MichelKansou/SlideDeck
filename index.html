@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="Michel Kansou">
+    <link rel="stylesheet" type="text/css" href="app/css/semantic/semantic.min.css">
+    <link rel="stylesheet" href="app/css/main.css">
+    <title>SlideDeck</title>
+  </head>
+  <body>
+    <div id="app" />
+    <script>
+        // Database path
+        var dataBasePath =__dirname+'/app/data/cache-data.json';
+        // Database for reducers
+        var reduxDataBase = require (dataBasePath);
+        require('./build/app.js');
+    </script>
+  </body>
+</html>

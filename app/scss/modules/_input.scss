@@ -1,0 +1,44 @@
+label.ui.icon.button.importSlide {
+    background-color: $FlatDarkGreenColor;
+    border-bottom: 7px solid;
+    color: $whiteColor;
+    border-bottom-color: $FlatGrayColor;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    border-radius: 0;
+    &:hover{
+        background-color: $FlatGreenColor;
+    }
+}
+.editPathInput{
+    .button.importSlidePath{
+        width: 100%;
+        padding: 0.4em;
+    }
+    input#importSlidePath{
+        display: none;
+    }
+}
+.ui.button.save{
+    display: table;
+    margin: 0;
+    padding: 2px 7px;
+    height: 18px;
+    border-radius: 1.3em;
+    margin-left: auto;
+}
+button.ui.button.FullScreenButton {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+input#importSlide{
+    display: none;
+}
